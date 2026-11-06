@@ -1,0 +1,128 @@
+    body {
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: 100vh;
+    }
+    .bg-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            animation: fade 16s infinite;
+    }
+    .bg1 {
+            background-image:url('images/bg-login-1.jpg');
+            animation-delay:0s;
+        }
+    .bg2 {
+            background-image:url('images/bg-login-2.jpg');
+            animation-delay:4s;
+        }
+    .bg3 {
+        
+            background-image:url('images/bg-plan.jpg');
+            animation-delay:8s;
+        }
+    .bg4{
+            background-image:url('images/bg-note.jpg') ;
+            animation-delay:12s;
+        }
+        @keyframes fade {
+            0% { opacity: 0; }    
+            10% { opacity: 1; } 
+            33% { opacity: 1; } 
+            43% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+    .标题{
+        align-items: center;
+        font-weight: 70;
+        color: rgb(245, 193, 96);
+        font-size: 23px;
+        text-shadow: 
+        3px 3px 0px rgba(30, 60, 120, 0.8), 
+        5px 5px 15px white;
+    }
+    .raw {
+        display:flex;
+        align-items: center;
+        margin-bottom: 20px;/*两行之间留点空*/
+        box-shadow: 0 0 5px gray;
+        border-radius:5px 5px 5px 5px;
+    }
+    .tip {
+        width :60px;
+        height: 40px;
+        background-color: burlywood;
+        color: white;
+        text-align: center;
+        border-radius:5px 0 0 5px;
+        outline:none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .userinpute {
+        flex: 1;
+        height: 40px;
+        background-color: rgb(238, 231, 205);
+        text-align:left;
+        border-radius:0 0 5px 5px;
+        box-sizing: border-box;/*见下一条，如果去了边框，盒子会少2px，用这个可以保证盒大小不变*/
+        border: none;/*inpute类型自带边框，如果想去边框就要用这个*/
+        outline:none;
+    }
+    .conform{
+        width: 100px;
+        height: 40px;
+        background-color: #ee9820;
+        color: white;
+        box-sizing: border-box;
+        border: none;
+        border-radius:0 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-property:transform;
+         box-shadow: 0 0 5px gray;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        cursor: pointer;
+    }
+    .conform:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+    .登录区 {
+        width:400px;
+        height:500px;
+        background-image: url('images/bg-login-card.jpg');
+        background-position: center;
+        background-size: cover;
+        flex-direction: column;
+        align-items:center;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        border-radius: 10px 10px 10px 10px;
+        animation:slideUp 0.8s ease-out;
+        position: relative;
+        box-shadow: 3px 3px 15px #795548EB,2px 4px 6px #795548EB;
+    }
+    @keyframes slideUp {
+          0%  {transform:translateY(50px); opacity: 0;
+        }
+           100%{transform:translateY(0); opacity: 1;
+        }
+    }
+    
+    

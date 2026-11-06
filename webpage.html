@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcom!</title>
+    <!-- 所有样式都在这个文件里 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+         
+    <div class="LEADBAR">
+        <div class="WELCOM"> 欢迎回来 <span id="welcomeName">JVLin</span>!</div>
+        <button type="button" class="button" data-target="home">首页</button>
+        <button type="button" class="button" data-target="plan">计划</button>
+        <button type="button" class="button" data-target="note">笔记</button>
+        <button type="button" class="button" data-target="diary">日志</button>
+        <button type="button" class="button" data-target="collection">收藏</button>
+    </div>
+
+    <div class="HEADBAR">
+        开启今日全栈旅途
+    </div>
+
+    <div class="COMBINE">
+
+    <div class="PLANBAR" id="plan" >
+        <div class="tesk"style="font-size: 40px;font-weight: 700;"> 我的计划 </div>
+        <h4 style="margin: 0;color: white;">已完成<span id="total-plan">0</span>个计划</h4>
+        <button type="button" class="button-plan" id="button-plan">添加计划 </button>
+        <div id="newplan" class="plancontainer"></div>
+    </div>
+
+    <div class="NOTEBAR" id="note">
+        <div class="NOTE" style="font-size: 50px;font-weight: 700;color: #795548EB;text-shadow: 3px 3px 0px wheat;">我的笔记</div>
+        <button type="button" class="button-plan" id="button-note" style="font-weight: bold;font-size: 20px;">添加笔记</button>
+        <div id="newnote" class="notecontainer"></div>
+    </div>
+
+    <div class="RECORDBAR">
+        <div class="COLLECTIONBAR" id="collection">
+            <div class="COLLECTION">我的收藏</div>
+            <button type="button" class="button-collection" id="button-collection" style="font-weight: bold;font-size: 13px;">添加收藏</button>
+            <div class="collectioncontainer" id="newcollection"></div>
+        </div> 
+
+        <div class="DIARYBAR" id="diary">
+            <div class="DIARY">我的日志</div>
+            <button type="button" class="button-diary" id="button-diary" style="font-weight: bold;font-size: 13px;">点击打卡</button>
+            <div class="CALENDER">
+                <div class="MOUNTH" id="month">11</div>
+                <div class="DAY" id="day">4</div>
+                <div class="WEEK" id="week">星期三</div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="developer">Developed by JVLin</h1>
+    </div>
+    
+
+    <!-- 所有逻辑都在这个文件里 -->
+    <script src="webpage.js" defer></script>
+</body>
+</html>
